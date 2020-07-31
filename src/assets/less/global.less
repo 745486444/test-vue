@@ -1,0 +1,144 @@
+
+@font-size_12: 12px;
+@font-size_14: 14px;
+@font-size_16: 16px;
+@font-size_18: 18px;
+
+@base-color:#111;
+@white-color:#fff;
+@blue:#4ba0ff;
+@red:#ff6f72;
+@yellow:#ffc107;
+@grey:#737373;
+@grey-bg:#fafafa;
+@op-blue:#c9e3ff;
+@op-txt-blue:#a7c7f7;
+
+input {
+  outline: none;
+}
+
+
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ *zoom:1;}
+a{ text-decoration:none; color:#333;}
+a:hover{color:@blue; }
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.multi-ellipsis(@num:2){
+  text-overflow: ellipsis;
+  overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @num;
+}
+.padlr{
+  padding: 0 22px;
+
+}
+.radius(@radius:4px){
+  border-radius:@radius;
+}
+.line-height(@height:20px,@lineheight:20px){
+    height: @height;
+    line-height: @lineheight
+}
+.middle(@width, @height) {
+	  position: absolute;
+   	top: 50%;
+    left: 50%;
+    margin-top: -@height/2;
+    margin-left: -@width/2;
+}
+.right{
+  text-align: right;
+}
+.grey-txt{
+  color: @base-color*9;
+  font-size: @font-size_12;
+}
+.center{
+  text-align: center;
+}
+.font-bold{
+  font-weight: bold;
+}
+.white-bg{
+  background: @white-color;
+}
+
+.mt20{
+  margin-top: 20px;
+}
+.mt30{
+  margin-top:30px;
+}
+.mt40{
+  margin-top:40px;
+}
+.mt50{
+  margin-top:50px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+
+.blue-txt{
+  color: @blue;
+}
+.red-txt{
+  color:@red;
+}
+.border{
+  border: 1px solid #e5e5e5;
+}
+.border-top{
+  border-top: 1px solid #e5e5e5;
+}
+.shadow{
+  box-shadow:1px 1px 18px rgba(0,0,0,.1) ;
+}
+.border-bottom{
+  border-bottom: 1px solid #e5e5e5;
+}
+.border-right{
+  border-right: 1px solid #e5e5e5;
+}
+.border-left{
+  border-left: 1px solid #e5e5e5;
+}
+.dashed-bottom{
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+/*-----------按钮---------*/
+
+.icon-add{
+  width:30px;/*no*/
+  height: 30px;/*no*/
+  display: inline-block;
+  position: relative;
+  &:after,&:before{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:10px;/*no*/
+    height:2px;/*no*/
+    border-radius: 2px;/*no*/
+    background: @base-color*3;
+    content: "";
+  }
+  &:before{
+    width:2px;/*no*/
+    height:10px;/*no*/
+  }
+}
+
+
+/*------------内页搜索-----------------*/

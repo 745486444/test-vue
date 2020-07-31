@@ -1,0 +1,172 @@
+/*-----------------弹窗样式----------------*/
+.el-dialog {
+  border-radius: 4px;
+}
+
+.el-dialog__header {
+  background: #8bc2ff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 16px 20px;
+  font-size: 16px;
+
+  .el-dialog__title {
+    color: #fff;
+  }
+
+  .el-dialog__headerbtn {
+    top: 16px;
+  }
+
+  .el-icon-close {
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+}
+
+.dialog-footer {
+  text-align: right;
+
+  .el-button + .el-button {
+    margin-left: 20px;
+  }
+
+  .el-button--small {
+    padding: 8px 24px;
+  }
+
+  .el-button--default {
+    background: #f0f0f0;
+    color: #737373;
+    border-color: #f0f0f0;
+  }
+}
+
+/*----------按钮----------*/
+.el-button--small {
+  font-size: 16px;
+  padding: 8px 20px;
+
+}
+
+.line {
+  text-align: center;
+}
+
+/*--------tab-------*/
+.main-tab {
+  position: fixed;
+  top: 60px;
+  left: 260px;
+  width: calc(100% - 260px);
+  z-index: 2;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  height: 40px;
+
+  .el-tabs__header {
+    border: none;
+
+    .el-tabs__nav {
+      border: none;
+    }
+
+    .el-tabs__item.is-closable:hover {
+      padding: 0;
+    }
+
+    .el-tabs__item {
+      border: none;
+      background: #f4f9ff;
+      color: #999;
+      font-size: 16px;
+      border-right: 1px solid #e5e5e5;
+      padding: 0;
+
+      i {
+        padding-left: 4px;
+      }
+
+      div {
+        padding: 0 20px;
+      }
+
+      &:nth-child(2) {
+        padding: 0;
+      }
+
+      &.is-active {
+        color: #4b86ff;
+        background: #d7eaff;
+
+        &.is-closable {
+          padding: 0;
+        }
+      }
+
+    }
+
+    .el-icon-close {
+      display: none;
+    }
+  }
+}
+
+/* --------table--------- */
+.el-table {
+  thead {
+
+  }
+
+  td {
+    border-color: #e5e5e5;
+    color: #737373;
+  }
+
+  th {
+    background: #fafafa;
+    color: #333;
+    border-right-color: #fafafa;
+  }
+}
+
+/* ----------表单------------ */
+.el-form-item__label {
+  font-size: 16px;
+  color: #666;
+}
+
+.el-form-item {
+  margin-bottom: 20px;
+}
+
+.el-form-item__label, .el-form-item__content {
+  line-height: 34px;
+}
+
+.el-input__inner {
+  height: 34px;
+  line-height: 34px;
+}
+
+.el-input__icon {
+  line-height: 34px;
+}
+
+.el-textarea__inner {
+  height: 80px;
+}
+
+.el-checkbox__label, .el-radio__label {
+  font-size: 16px;
+  color: #737373;
+}
+
+
+
